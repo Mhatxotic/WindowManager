@@ -1,0 +1,29 @@
+#include <Windows.H>
+
+#ifdef RC_INVOKED
+1 ICON wman.ico
+CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST wman.man
+
+1 VERSIONINFO
+PRODUCTVERSION 25,6,20,0
+FILEVERSION 25,6,20,0
+FILEOS VOS__WINDOWS32
+FILETYPE VFT_APP
+{
+  BLOCK "StringFileInfo"
+  {
+    BLOCK "08090000"
+    {
+      VALUE "CompanyName", "Mhatxotic Design"
+      VALUE "FileDescription", "Window Manager"
+      VALUE "FileVersion", "25.6.20.0"
+      VALUE "LegalCopyright", "CC0 1.0 Universal"
+      VALUE "OriginalFilename", "WMAN.EXE"
+    }
+  }
+  BLOCK "VarFileInfo"
+  {
+    VALUE "Translation", 0x0809 0x0000
+  }
+}
+#endif
